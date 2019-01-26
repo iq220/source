@@ -1,0 +1,269 @@
+yubikey-personalization-gui NEWS -- History of user-visible changes.     -*- outline -*-
+
+* Version 3.1.26 (unreleased)
+
+* Version 3.1.25 (released 2018-01-16)
+
+** Add oath ID for PSKC output.
+
+** Add french scancode options.
+
+** Improve static password format validation.
+
+** Change about heading.
+
+* Version 3.1.24 (released 2016-01-04)
+
+** Fix a bug when doing consecutive programming that reset id to 0.
+
+** Fix a case where the image on an old key might be shown momentarily.
+
+** Updated icons and images.
+
+** Updated mac and windows builds to qt 5.5.
+
+* Version 3.1.23 (released 2015-10-01)
+
+** Fix a bug that caused a crash on selecting keyboard layout.
+
+* Version 3.1.22 (released 2015-09-25)
+
+** Fix so version detection works correctly for versions with more than one digit.
+
+** Add german keyboard layout.
+
+** Fixup neo-n picture
+
+* Version 3.1.21 (released 2015-05-29)
+
+** Fix a bug where decode functions where given src length instead of result.
+
+** Fix an issue where test cases where installed by default.
+
+** Update pictures.
+
+* Version 3.1.20 (released 2015-04-01)
+
+** Some new pictures.
+
+** Add some simplistic unit tests.
+
+** Fix bug with translation of | in scancode to text.
+
+* Version 3.1.19 (released 2015-03-13)
+
+** Remove build timestamp.
+
+** Add picture of Neo-N
+
+* Version 3.1.18 (released 2014-11-28)
+
+** Image and correct features for plus.
+
+* Version 3.1.17 (released 2014-10-30)
+
+** Fixup the Yubico logformat so accesscode is padded out with 0
+
+** Make texts translatable.
+
+** Include the accessibility plugin in bundles.
+
+** Show U2F as a feature.
+
+** Switch the mac bundle to qt5.
+
+* Version 3.1.16 (released 2014-09-16)
+
+** Fix bug where no random numbers where generated on windows.
+
+* Version 3.1.15 (released 2014-09-11)
+
+** Add logging output format PSKC.
+
+** Force selection of keyboard layout before programing scancode mode.
+
+** Text changes.
+
+** New picture for YubiKey 3.3.
+
+* Version 3.1.14 (released 2014-01-10)
+
+** Fix layout of the confirmbox window.
+
+* Version 3.1.13 (released 2014-01-10)
+
+** Add a diagnostics view by right-clicking the Yubico logo
+shows a window with info about what's happening.
+
+** Make the help window non-modal so it can be open while interacting with
+the interface.
+
+** Change the NDEF-URL placeholder to a default string.
+
+* Version 3.1.12 (released 2013-12-30)
+
+** Text fixes.
+
+* Version 3.1.11 (released 2013-10-09)
+
+** Make sure there is no extra box shown around import on tools page.
+
+** Show correct error when there's more than one key detected.
+
+** Support for building and using qt5.
+
+** Allow writing of a YubiKey with unknown firmware.
+
+** Recheck the key properly after regaining focus, might be a new key.
+
+** Add a "flexible" logging scheme, possible to be configured from the GUI.
+
+* Version 3.1.10 (released 2013-07-04)
+
+** Add import page under tools for importing ycfg.
+
+** Minor UI fixes.
+
+** Fix for crash on scan-code entry.
+
+** Fix for crash on the number-converter.
+
+** Add serial-number checkbox for access code entry.
+
+* Version 3.1.9 (released 2013-04-22)
+
+** Add experimental export support to ycfg-json format.
+
+** Always ask what file to log to when saving configuration.
+
+** Rework build-system to never compile-in libykpers and libyubikey.
+
+* Version 3.1.8 (released 2013-03-18)
+
+** Fix programming of OATH MUI
+Identifier was never added to the token, broken since release 3.1.3.
+
+* Version 3.1.7 (released 2013-03-14)
+
+** Try to make some version dependencies in the GUI clearer.
+
+** Change around the "Upload to Yubico" feature:
+It used to spawn a web browser with a standard URL with all fields, instead
+write down a html page with a self-submitting POST form to a temp directory
+and point the web browser at that.
+
+** Fixup entering of OATH MUI.
+
+** Add support for new YubiKey feature: Inversed LED, appearing in firmware
+2.4 and 3.1.
+
+* Version 3.1.6 (released 2013-02-21)
+
+** Only lock the key when window has focus.
+
+** Fix OATH configuration for 2.1 keys.
+
+** Make the override box on the http warning for NDEF work.
+
+* Version 3.1.5 (released 2013-01-10)
+
+** Fixup building on osx.
+
+* Version 3.1.4 (released 2013-01-09)
+
+** Display library version on About page.
+
+** Do confirmation if NDEF does not start with http.
+
+* Version 3.1.3 (released 2012-12-21)
+
+** Bugfix for publidId as serial in multi-key writes.
+
+** Correctly show and enable what the production NEO is capable of.
+
+** Support for writing SLOT_NDEF2 for production NEO.
+
+** Fix saving of pacing options.
+
+** Switch animations to mng, higher quality.
+
+** Create a setting for toggling animations on and off, accessible
+from context menu.
+
+** Different error message for challenge-response than configuring.
+
+** Fix a resource leak when auto-programming keys.
+
+** Fix oath identity increments.
+
+* Version 3.1.2 (released 2012-11-07)
+
+** Support for deleting YubiKey configurations.
+
+** Re-read key after writing it, so we can see it changed.
+
+** Add Access-code entry for NDEF programming.
+
+** Fix bug which wrote same key multiple times in multi-write mode.
+
+** Small windows installer fixes.
+
+* Version 3.1.1 (released 2012-10-17)
+
+** For native mac builds, sign and use pkgbuilder to create pkg installer.
+
+** Add logging format "Yubico" that corresponds to other tools.
+
+** Show which slots of a key contain valid configuration.
+
+** Refactor scancode input for static keys, now allows editing, pasting and
+entering raw scancodes.
+
+** When scanning if the key is present, keep it open for as short as possible,
+should increase possibility for other concurrent accesses.
+
+* Version 3.1.0 (released 2012-09-28)
+
+** Support for features in YubiKey 2.3.
+Requires updating the ykpers library to version 1.8.0.
+
+** Support for writing NDEF of YubiKey NEO.
+
+** Removes the dj prefix that was added for customer prefixes.
+
+** Support for entering customer prefix in modhex or hex as well, show all
+formats.
+
+** Option to allow public id to be based on key serial.
+
+** View for testing out challenge response with YubiKey.
+
+** Autosave settings when changing.
+
+** Don't write HMAC-SHA1 without variable input on 2.2 key.
+
+** Oath IMF is set as direct number, not as what was entered * 16, also
+use higher ceiling for this.
+
+** New windows installer based on nsis.
+
+** New pictures, and changing picture depending on YubiKey version.
+
+* Version 3.0.6 (released 2012-06-07)
+
+** Bump copyright years.
+
+** Drop deps/ and libs/ explaining in README where you get them.
+
+* Version 3.0.5 (released 2012-06-05)
+
+** release scripting, fixed NEWS file.
+
+* Version 3.0.4 (released 2012-06-05)
+
+** NEWS file, release scripting, drop libusb dependency.
+
+* Version 3.0.3 (released 2012-06-04)
+
+** Fixes to build system to allow building without bundled dependencies on
+** linux.

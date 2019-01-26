@@ -1,0 +1,18 @@
+FROM microsoft/dotnet:2.1-runtime-stretch-slim AS base
+WORKDIR /app
+
+FROM microsoft/dotnet:2.1-sdk-stretch AS build
+WORKDIR /src
+COPY Core_Console/Core_Console.csproj Core_Console/
+RUN dotnet restore Core_Console/Core_Console.csproj
+COPY . .
+WORKDIR /src/Core_Console
+RUN dotnet build Core_Console.csproj -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish Core_Console.csproj -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
+ENTRYPOINT ["dotnet", "Core_Console.dll"]

@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "btcbc", "btcbc\btcbc.sqlproj", "{81B1E055-917F-42C2-8BB5-81A680EB01B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0767FD37-77C6-4D34-84CE-FE9EB00345FD}"
+	ProjectSection(SolutionItems) = preProject
+		KeyVault\Microsoft.Azure.KeyVault.Samples.sln = KeyVault\Microsoft.Azure.KeyVault.Samples.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{66FCBAEC-D584-4898-814A-CDB29A3D4063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloKeyVault", "KeyVault\samples\HelloKeyVault\HelloKeyVault.csproj", "{A8A1A890-175F-4027-B2CF-7B02DDE0DF42}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SampleKeyVaultClientService", "KeyVault\samples\SampleAzureWebService\SampleKeyVaultClientService\SampleKeyVaultClientService.ccproj", "{3B3C9279-CFC1-4D8E-A3E6-52A442832699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleKeyVaultClientWebRole", "KeyVault\samples\SampleAzureWebService\SampleKeyVaultClientWebRole\SampleKeyVaultClientWebRole.csproj", "{A34AA3C2-7E33-4E08-BD55-04C631ACEBC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleKeyVaultConfigurationManager", "KeyVault\samples\SampleAzureWebService\SampleKeyVaultConfigurationManager\SampleKeyVaultConfigurationManager.csproj", "{46B8DB85-0B08-4EDA-976F-FCD6C574B148}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81B1E055-917F-42C2-8BB5-81A680EB01B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B1E055-917F-42C2-8BB5-81A680EB01B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B1E055-917F-42C2-8BB5-81A680EB01B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{81B1E055-917F-42C2-8BB5-81A680EB01B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B1E055-917F-42C2-8BB5-81A680EB01B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B1E055-917F-42C2-8BB5-81A680EB01B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A8A1A890-175F-4027-B2CF-7B02DDE0DF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A1A890-175F-4027-B2CF-7B02DDE0DF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A1A890-175F-4027-B2CF-7B02DDE0DF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A1A890-175F-4027-B2CF-7B02DDE0DF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B3C9279-CFC1-4D8E-A3E6-52A442832699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3C9279-CFC1-4D8E-A3E6-52A442832699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3C9279-CFC1-4D8E-A3E6-52A442832699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3C9279-CFC1-4D8E-A3E6-52A442832699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A34AA3C2-7E33-4E08-BD55-04C631ACEBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34AA3C2-7E33-4E08-BD55-04C631ACEBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34AA3C2-7E33-4E08-BD55-04C631ACEBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34AA3C2-7E33-4E08-BD55-04C631ACEBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B8DB85-0B08-4EDA-976F-FCD6C574B148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B8DB85-0B08-4EDA-976F-FCD6C574B148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B8DB85-0B08-4EDA-976F-FCD6C574B148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B8DB85-0B08-4EDA-976F-FCD6C574B148}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8A1A890-175F-4027-B2CF-7B02DDE0DF42} = {66FCBAEC-D584-4898-814A-CDB29A3D4063}
+		{3B3C9279-CFC1-4D8E-A3E6-52A442832699} = {66FCBAEC-D584-4898-814A-CDB29A3D4063}
+		{A34AA3C2-7E33-4E08-BD55-04C631ACEBC8} = {66FCBAEC-D584-4898-814A-CDB29A3D4063}
+		{46B8DB85-0B08-4EDA-976F-FCD6C574B148} = {66FCBAEC-D584-4898-814A-CDB29A3D4063}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90478A4F-0BA5-43BB-8BAD-A3764D1BA451}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/btcbc
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = btcbc\\btcbc.sqlproj
+		SccProjectName1 = btcbc
+		SccLocalPath1 = btcbc
+	EndGlobalSection
+EndGlobal

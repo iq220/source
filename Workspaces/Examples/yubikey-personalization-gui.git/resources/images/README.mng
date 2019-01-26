@@ -1,0 +1,7 @@
+Getting the MNG files in correct format can be a bit of work. Currently the
+method that seems to work best is to build with the convert tool from
+Imagemagick like:
+
+$ convert -delay 200 first.png second.png output.mng
+
+The trick is that the resulting image must be without JNG formatting.

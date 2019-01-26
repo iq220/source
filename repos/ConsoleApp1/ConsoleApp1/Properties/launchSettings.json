@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConsoleApp1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "email": "test"
+      }
+    }
+  }
+}

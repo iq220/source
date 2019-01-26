@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  core_console:
+    image: ${DOCKER_REGISTRY-}coreconsole
+    build:
+      context: .
+      dockerfile: Core_Console\Dockerfile
